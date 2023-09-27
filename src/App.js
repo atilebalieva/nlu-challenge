@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import './App.css';
 import logo from "./images/logo.png";
+import Footer from './Footer';
 
 function App() {
   return (
-    <div>
+    <div className='main-container'>
             <header className="header">
         <Link to="">
           {" "}
@@ -25,6 +26,8 @@ function App() {
           </Link>
         </nav>
       </header>
+
+      <Footer/>
     </div>
   );
 }

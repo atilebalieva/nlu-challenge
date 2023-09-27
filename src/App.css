@@ -46,5 +46,17 @@
  .link:hover {
    color: #2CE8A6;
  }
+
+ .footer_container {
+   height: 85px;
+   /* width: 100%; */
+   background-color: #020022;
+   border-top: 1px solid #2CE8A6;
+   padding: 10px 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 20px;
+ }
  
  
