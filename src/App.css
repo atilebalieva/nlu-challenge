@@ -8,7 +8,6 @@
 
 .main_container {
    background-color:#221a76;
-   /* background-color:#07061e; */
    font-family: 'Red Hat';
    height: 100vh;
    display: flex;
@@ -24,7 +23,6 @@
 
  .footer_container {
    height: 85px;
-   /* width: 100%; */
    background-color: #020022;
    border-top: 1px solid #2CE8A6;
    padding: 10px 50px;

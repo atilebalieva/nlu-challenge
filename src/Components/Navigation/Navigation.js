@@ -2,20 +2,31 @@ import React from "react";
 import "../Navigation/Navigation.css";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
+import Dropdown from '../Dropdown/Dropdown';
 
 function Navigation() {
+  const capabilities = {
+    name: "Capability",
+    link: "/capabilities",
+    categories: ["design", "production", "certification"]
+  }
+  
+  const flavors = {
+    name: "Flavors",
+    link: "/flavors",
+    categories: ["soft-fruits", "citrus", "tropical"]
+  }
+
   return (
       <header className="header">
+        <Link to=""><img src={logo} alt="Logo"/></Link>
         <nav>
           <ul className="navigation">
-            <li>  
-              <Link to=""><img src={logo} alt="Logo"/></Link>
+            <li>
+              <Dropdown items = {capabilities}/>
             </li>
             <li>
-              <Link to="/capabilities" className="link">Capabilities</Link>
-            </li>
-            <li>
-              <Link to="/flavors" className="link">Flavors</Link>
+              <Dropdown items = {flavors}/>
             </li>
             <li>
               <Link to="/about-us" className="link">About Us</Link>
@@ -29,4 +40,4 @@ function Navigation() {
   )
 }
 
-export default Navigation
+export default Navigation;
