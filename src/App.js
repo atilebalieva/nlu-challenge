@@ -1,6 +1,6 @@
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import logo from "./images/logo.png";
+import Navigation from './Components/Navigation/Navigation';
 import Footer from './Components/Footer';
 import Flavors from './Components/Flavors/Flavors';
 import Home from './Components/HomePage/Home';
@@ -15,25 +15,7 @@ import FlavorsList from './Components/Flavors/FlavorsList';
 function App() {
   return (
     <div className="main_container">
-      <header className="header">
-      <Link to="">
-          <img src={logo} alt="Logo" />
-      </Link>
-        <nav className="navigation">
-          <Link to="/capabilities" className="link">
-            Capabilities
-          </Link>
-          <Link to="/flavors" className="link">
-            Flavors
-          </Link>
-          <Link to="/about-us" className="link">
-            About Us
-          </Link>
-          <Link to="/contact-us" className="link">
-            Contact Us
-          </Link>
-        </nav>
-      </header>
+     <Navigation/>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/capabilities" element={<Capabilities />}></Route>

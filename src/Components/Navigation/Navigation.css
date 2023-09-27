@@ -1,0 +1,32 @@
+.header {
+   height: 95px;
+   background-color: #020022;
+   border-bottom: 1px solid #2CE8A6;
+   padding: 10px 50px;
+ }
+ 
+ .header img,
+ .footer_container img {
+   width: 200px;
+   max-width: 100%;
+   min-width: 130px;
+   height: auto;
+ }
+ 
+ .navigation {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+ }
+ 
+ .link {
+   color: white;
+   text-decoration: none;
+   font-size: 21px;
+   font-weight: bold;
+ }
+ 
+ .link:hover {
+   color: #2CE8A6;
+ }
