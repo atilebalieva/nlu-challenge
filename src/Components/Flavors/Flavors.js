@@ -11,8 +11,8 @@ function Flavors() {
       <div className="flavors-container container">
         {jsonData?.categories.map((category) => {
           return ( 
-            <div key={category.id} onClick={()=>{navigate(`/flavors-list/${category.id}`)}} className="flavor_cards">
-              <div className="">
+            <div key={category.id} onClick={()=>{navigate(`/flavors/${category.id}`)}} className="flavor_cards">
+              <div>
               <img src={flavorImg} alt="flavor" />
               </div>
               <p>{category.name}</p>
