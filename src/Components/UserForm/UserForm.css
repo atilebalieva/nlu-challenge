@@ -1,0 +1,15 @@
+.form_container {
+   display: flex;
+   flex-direction: column;
+   width: 29%;
+   border: 1px solid red;
+   align-items: center;
+ }
+ 
+ .form_container input {
+   width: 80%;
+ }
+
+ #getLetters{
+   width: 10%;
+}

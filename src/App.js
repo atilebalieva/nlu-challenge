@@ -13,12 +13,11 @@ import ContactUs from './Components/AboutUs';
 
 function App() {
   return (
-    <div className='main-container'>
-            <header className="header">
-        <Link to="">
-          {" "}
+    <div className="main_container">
+      <header className="header">
+      <Link to="">
           <img src={logo} alt="Logo" />
-        </Link>
+      </Link>
         <nav className="navigation">
           <Link to="/capabilities" className="link">
             Capabilities

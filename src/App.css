@@ -24,20 +24,17 @@
    flex-direction: row;
    align-items: center;
    justify-content: space-evenly;
-    /* width: 100%; */
-   /* position: fixed;
-   top: 0; */
  }
 
  .header img,
-.footer_container img {
+ .footer_container img {
   width: 200px;
   max-width: 100%;
   min-width: 130px;
   height: auto;
-}
+ }
 
-.navigation {
+ .navigation {
    display: flex;    
    padding: 0 30px;
  }
