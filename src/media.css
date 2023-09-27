@@ -1,0 +1,22 @@
+@media only screen and (max-width: 720px) {
+   .company-info_sn{
+      display: none;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .main_container {
+      font-size: 14px;
+   }
+
+   .company-info_list {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+   }
+
+   .schedule_icon {
+      width: 41px;
+      height: 41px;
+   }
+}

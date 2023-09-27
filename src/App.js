@@ -11,10 +11,12 @@ import Certification from './Components/Capabilities/Certification';
 import AboutUs from './Components/AboutUs';
 import ContactUs from './Components/AboutUs';
 import FlavorsList from './Components/Flavors/FlavorsList';
+import CompanyInfo from './Components/CompanyInfo/CompanyInfo'
 
 function App() {
   return (
     <div className="main_container">
+      <CompanyInfo/>
      <Navigation/>
       <Routes>
         <Route path="/" element={<Home />}></Route>
