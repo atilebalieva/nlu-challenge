@@ -1,10 +1,12 @@
 import React from "react";
 import UserForm from "../UserForm/UserForm";
-import '../HomePage/Home.css'
+import '../HomePage/Home.css';
+import Slider from "../Sliders/Slider";
 
 function Home() {
   return (
     <div>
+      <Slider />
       <div className="main_info container">
         <div>
           <h2>Design. Manufacture. Deliver</h2>

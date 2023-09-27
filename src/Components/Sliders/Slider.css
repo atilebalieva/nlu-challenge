@@ -1,0 +1,32 @@
+.alice-carousel {
+   height: 50vh;
+   overflow-y: hidden;
+ }
+ 
+ .slider-item img {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+ }
+ 
+ .alice-carousel__dots {
+   position: absolute;
+   bottom: 4%;
+   left: 50%;
+ }
+ 
+ .alice-carousel__prev-btn,
+ .alice-carousel__next-btn {
+   position: absolute;
+   top: 50%;
+   font-size: 2rem;
+   width: 2rem !important;
+ }
+ 
+ .alice-carousel__next-btn {
+   right: 1%;
+ }
+ 
+ .alice-carousel__prev-btn {
+   left: 1%;
+ }
