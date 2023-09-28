@@ -3,7 +3,7 @@ import logo from '../../images/logo.png';
 import {FaFacebookF, FaTwitter, FaInstagramSquare, FaPhoneAlt, FaRegClock} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import '../CompanyInfo/companyInfo.css';
-import '../../media.css';
+import '../../css/media.css';
 
 function CompanyInfo() {
   return (

@@ -27,5 +27,13 @@
    align-items: center;
    gap: 20px;
  }
+
+ .footer_container img {
+  width: 200px;
+  max-width: 100%;
+  min-width: 130px;
+  height: auto;
+}
+
  
  

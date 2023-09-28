@@ -1,10 +1,18 @@
-@media only screen and (max-width: 720px) {
-   .company-info_sn{
+@media only screen and (max-width: 768px) {
+   .company-info_sn,
+   .nav_search {
       display: none;
    }
 }
 
+@media only screen and (max-width: 720px) {
+
+}
+
 @media only screen and (max-width: 600px) {
+   .desktop-nav {
+      display: none;
+   }
    .main_container {
       font-size: 14px;
    }

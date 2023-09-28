@@ -1,28 +1,46 @@
 .header {
   padding: 35px 0px;
   position: relative;
-  z-index: 99;
   /* position: fixed;
   top: 20%; */
-}
+ }
 
-.header nav {
- width: 50%;
-}
+ .desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+ }
+ 
+ .header nav {
+  width: 500px;
+ }
 
-.navigation {
+ .header input {
+  width: 300px;
+  padding: 10px;
+  position: relative;
+ }
+
+ .search_icon {
+  position: absolute;
+  top: 43%;
+  right: 1%;
+ }
+
+ .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.link {
+  gap: 20px;
+ }
+ 
+ .link {
   text-decoration: none;
-  color: rgb(89, 89, 89) !important;
+  color: rgb(89, 89, 89);
   font-weight: 700;
-
-}
-
-.link:hover {
-  color: #2CE8A6;
-}
+ }
+ 
+ .link:hover {
+   color: #2CE8A6;
+ }
