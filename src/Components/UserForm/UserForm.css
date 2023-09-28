@@ -1,5 +1,6 @@
 .form_container {
   width: 300px;
+  max-width: 100%;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid rgb(213, 213, 213);

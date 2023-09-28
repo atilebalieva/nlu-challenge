@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navigation from './Components/Navigation/Navigation';
-import Footer from './Components/Footer';
+import Footer from "./Components/Footer/Footer";
 import Flavors from './Components/Flavors/Flavors';
 import Home from './Components/HomePage/Home';
 import Capabilities from './Components/Capabilities/Capabilities';

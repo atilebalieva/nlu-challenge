@@ -1,0 +1,21 @@
+.footer_container {
+   height: 85px;
+   padding: 10px 0;
+   background-color: rgb(53, 53, 53);
+   color: aliceblue;
+ }
+
+.footer_container div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 20px;
+}
+ 
+ .footer_container img {
+   width: 200px;
+   max-width: 100%;
+   min-width: 130px;
+   height: auto;
+ }
+ 
