@@ -1,18 +1,22 @@
+@media only screen and (max-width: 870px) {
+   .main_info_block {
+      width: 100% !important;
+   }
+}
+
 @media only screen and (max-width: 768px) {
    .company-info_sn,
    .nav_search {
       display: none;
    }
-}
-
-@media only screen and (max-width: 720px) {
 
 }
 
 @media only screen and (max-width: 600px) {
    .desktop-nav {
-      display: none;
+      display: none !important;
    }
+   
    .main_container {
       font-size: 14px;
    }
@@ -20,11 +24,16 @@
    .company-info_list {
       flex-direction: column;
       gap: 10px;
-      align-items: flex-start;
+      align-items: flex-start !important;
    }
 
-   .schedule_icon {
-      width: 41px;
-      height: 41px;
+   .schedule_icon,
+   .login {
+      width: 33px !important;
+      height: 33px !important;
+   }
+
+   .login {
+      margin: 0 20px  !important;
    }
 }

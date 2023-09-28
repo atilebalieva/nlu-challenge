@@ -1,5 +1,20 @@
 .main_info {
-   display: flex;
-   margin-top: 2rem;
-   flex-wrap: wrap;
- }
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.main_info_block {
+ width: 60%;
+}
+
+.main_info_text {
+ margin-bottom: 30px;
+ text-align: justify;
+}
+
+.main_info_main_text h1 {
+ margin-bottom: 10px;
+}

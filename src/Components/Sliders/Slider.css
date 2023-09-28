@@ -17,10 +17,14 @@
  
  .alice-carousel__prev-btn,
  .alice-carousel__next-btn {
-   position: absolute;
-   top: 50%;
-   font-size: 2rem;
-   width: 2rem !important;
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  padding: 5px 10px;
+  width: 3rem !important;
+  border: 1.5px solid #375588;
+  border-radius: 50%;
+
  }
  
  .alice-carousel__next-btn {

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import flavorImg from "../../images/flavors.png";
 import "./Flavors.css";
 import jsonData from '../../db/db.json'
