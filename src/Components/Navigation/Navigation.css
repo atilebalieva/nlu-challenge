@@ -1,8 +1,14 @@
 .header {
   padding: 35px 10px;
   position: relative;
-  /* position: fixed;
-  top: 20%; */
+  background-color: white;
+ }
+
+ .fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
  }
 
  .desktop-nav {
