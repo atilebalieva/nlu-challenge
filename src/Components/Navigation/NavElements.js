@@ -1,20 +1,22 @@
 import React from 'react'
-import Dropdown from '../Dropdown/Dropdown'
+import Dropdown from '../Dropdown/Dropdown';
 import { Link } from 'react-router-dom'
 import "../Navigation/Navigation.css";
+import jsonData from "../../db/db.json";
 
 function NavElements() {
-   const capabilities = {
-      name: "Capability",
-      link: "/capabilities",
-      categories: ["design", "production", "certification"]
-    }
-    
-    const flavors = {
-      name: "Flavors",
-      link: "/flavors",
-      categories: ["soft fruits", "citrus", "tropical"]
-    }
+  const capabilities = {
+    name: "Capability",
+    link: "/capabilities/",
+    categories: [{categoryId: "design", name: "Design"}, {categoryId: "production", name: "Production"}, {categoryId: "certification", name: "Certification"}]
+  }
+
+  const flavors = {
+    name: "Flavors",
+    link: "/flavors/",
+    categories: jsonData.flavors
+  }
+
   return (
    <nav>
    <ul className="navigation">
@@ -35,4 +37,4 @@ function NavElements() {
   )
 }
 
-export default NavElements;
+export default NavElements
