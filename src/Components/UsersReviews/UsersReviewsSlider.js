@@ -9,9 +9,9 @@ function ReviewsSlider() {
    return (
 
     <div>
-       <Reviews icon={icon1} name={'Damen K.'}/>
-         <Reviews icon={icon2} name={'Rosy S.'}/>
-         <Reviews icon={icon3} name={'Kim R.'}/>
+       <Reviews icon={icon1} name={'Damen K.'} position={manager}/>
+         <Reviews icon={icon2} name={'Rosy S.'}position={manager}/>
+         <Reviews icon={icon3} name={'Kim R.'}position={manager}/>
     </div>
       
     );

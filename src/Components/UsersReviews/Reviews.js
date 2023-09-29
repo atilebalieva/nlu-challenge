@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import icon1 from '../../images/user-icon.png';
-import icon2 from '../../images/user-icon-2.png';
-import icon3 from '../../images/user-icon-3.png';
 import {FaRegStar} from 'react-icons/fa';
 import {FaRegPlayCircle} from 'react-icons/fa';
 import '../UsersReviews/reviews.css';
 
-function Reviews() {
+function Reviews({icon, name, position}) {
    const link = "https://media.geeksforgeeks.org/wp-content/uploads/20200513195558/Placement100-_-GeeksforGeeks-1.mp4";
    const [modalOpen, setModalOpen] = useState(false);
    const handleOpen = () => {
@@ -20,7 +17,7 @@ function Reviews() {
     <div className="reviews_container">
       <div className="review_video">
          <FaRegPlayCircle className="play_icon" onClick={handleOpen}/>
-         <img src={icon1} alt="icon1" />
+         <img src={icon} alt="icon" />
          <div className={`modal ${modalOpen ? "modal_open" : ""}`}>
              <button className="modal_close" onClick={handleClose}>×</button>
              <div className="modal_overlay"></div>
@@ -34,17 +31,11 @@ function Reviews() {
          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, aliquid."</p>
       </div>
       <div>
-         <p className="users-name">Client-1</p>
-         <div>
-            <FaRegStar className="star_icon"/>
-            <FaRegStar className="star_icon"/>
-            <FaRegStar className="star_icon"/>
-            <FaRegStar className="star_icon"/>
-            <FaRegStar className="star_icon"/>
-         </div>
+         <p className="users-name">{name}</p>
+         <p>{position}</p>
       </div>
     </div>
   )
 }
 
-export default Reviews
+export default Reviews;

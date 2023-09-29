@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import '../Breadcrumps/breadcrumps.css';
+import '../Breadcrumbs/breadcrumbs.css';
 
-function Breadcrumps() {
+function Breadcrumbs() {
    const location = useLocation();
    let currentLink = '';
 
@@ -23,4 +23,4 @@ function Breadcrumps() {
   )
 }
 
-export default Breadcrumps
+export default Breadcrumbs;

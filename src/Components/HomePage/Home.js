@@ -3,6 +3,8 @@ import UserForm from "../UserForm/UserForm";
 import Slider from "../Sliders/Slider";
 import "../HomePage/home.css";
 import "../../media.css";
+import Reviews from "../UsersReviews/Reviews";
+
 
 function Home() {
   return (
@@ -17,6 +19,7 @@ function Home() {
           <h2>Everyones deserves an education  that helps them <span>reach  their potential</span>.</h2>
         </div>
         <UserForm />
+        <Reviews/>
       </div>
     </div>
   );

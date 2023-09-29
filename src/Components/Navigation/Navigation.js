@@ -4,7 +4,7 @@ import NavElements from "./NavElements";
 import {FaSearch} from "react-icons/fa";
 import {FaBars} from "react-icons/fa";
 import "../../media.css";
-import Breadcrumps from "../Breadcrumps/Breadcrumps";
+import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 
 function Navigation() {
   const elementRef = useRef();
@@ -46,7 +46,7 @@ function Navigation() {
              <FaSearch className="search_icon"/>
           </div>
     </div>
-    <Breadcrumps/>
+    <Breadcrumbs/>
     <FaBars className="burger_icon" onClick={handleMenu}/>
       </header>
   )
