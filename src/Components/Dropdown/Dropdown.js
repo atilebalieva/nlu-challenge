@@ -1,11 +1,12 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import DropdownContent from '../Dropdown/DropdownContent';
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { FaAngleDown } from 'react-icons/fa';
 
 function Dropdown({items}) {
+  
   const [isDropdownVisible, setDropdownVisible] = useState(false);
-
+  
   const handleMouseEnter = () => {
     setDropdownVisible(true);
   };

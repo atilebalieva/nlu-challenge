@@ -39,11 +39,13 @@ function Navigation() {
 
   return (
     <header ref={elementRef} className={`header container ${isFixed ? 'fixed' : ''}`}>
-    <div className={`desktop-nav container${isOpenNav ? 'show' : ''}`}>
+    <div className={`desktop-nav container ${isOpenNav ? 'show' : ''}`}>
           <NavElements/>
           <div className="nav_search">
-             <input type="text" name="search" placeholder="Find your favorite Flavor" />
-             <FaSearch className="search_icon"/>
+             <input type="search" name="search" placeholder="Find your favorite Flavor" />
+             <button className="search-button">
+               <FaSearch className="search_icon"/>
+             </button>
           </div>
     </div>
     <Breadcrumbs/>

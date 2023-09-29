@@ -12,7 +12,7 @@ function FlavorsList() {
      .then((response) => response.json())
      .then(data => setFlavor(data));
    };
- 
+   
    useEffect(() => {
      getFlavor();
    },[]);

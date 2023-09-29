@@ -1,20 +1,30 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Dropdown from '../Dropdown/Dropdown';
 import { Link } from 'react-router-dom'
 import "../Navigation/navigation.css";
-import jsonData from "../../db/db.json";
 
 function NavElements() {
+  const [flavorCategories, setFlavorCategories] = useState();
+   const getFlavorCategories = () => {
+     fetch(`http://localhost:3000/categories`)
+     .then((response) => response.json())
+     .then(data => setFlavorCategories(data));
+   };
+   
+   useEffect(() => {
+     getFlavorCategories();
+   },[]);
+
   const capabilities = {
     name: "Capabilities",
     link: "/capabilities/",
-    categories: [{categoryId: "design", name: "Design"}, {categoryId: "production", name: "Production"}, {categoryId: "certification", name: "Certification"}]
+    categories: [{id: "design", name: "Design"}, {id: "production", name: "Production"}, {id: "certification", name: "Certification"}]
   }
 
   const flavors = {
     name: "Flavors",
     link: "/flavors/",
-    categories: jsonData.flavors
+    categories: flavorCategories
   }
 
   return (

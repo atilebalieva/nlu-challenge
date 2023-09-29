@@ -4,13 +4,15 @@ import {FaFacebookF, FaTwitter, FaInstagramSquare, FaPhoneAlt, FaRegClock} from 
 import { Link } from 'react-router-dom';
 import '../CompanyInfo/companyInfo.css';
 import '../../media.css';
+import Login from '../LoginPage/Login'
+import Logo from '../Logo/Logo';
 
 function CompanyInfo() {
   return (
     <div className="container company-info">
       <ul className="company-info_list">
         <li>
-            <Link to=""><img src={logo} alt="Logo"/></Link>
+           <Logo/>
         </li>
         <li className="company-info_schedule">
           <FaRegClock className="icon schedule_icon"/>
@@ -32,11 +34,13 @@ function CompanyInfo() {
           <li className="icons tw"><a href=""><FaTwitter className="icon sn"/></a></li>
           <li className="icons insta"><a href=""><FaInstagramSquare className="icon sn"/></a></li>
           </ul>
-          
+        </li>
+        <li>
+          <Login/>
         </li>
       </ul>
     </div>
   )
 }
 
-export default CompanyInfo
+export default CompanyInfo;

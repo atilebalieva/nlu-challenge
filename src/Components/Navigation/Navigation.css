@@ -29,10 +29,20 @@
   position: relative;
  }
 
- .search_icon {
+ .nav_search {
+  position: relative;
+  width: 300px;
+ }
+
+ .search-button {
   position: absolute;
-  top: 40%;
-  right: 5%;
+  top: 0%;
+  right: 0%;
+  width: 50px;
+  height: 100%;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
  }
 
  .burger_icon {
@@ -70,6 +80,10 @@
      display: block;
   }
 
+  .header nav {
+    width: 100%;
+  }
+
   .desktop-nav {
     display: none;
     flex-direction: column;
@@ -78,10 +92,6 @@
 
    .nav_search {
     margin-top: 20px;
-   }
-
-   .search_icon {
-    display: none;
    }
 
    .navigation {

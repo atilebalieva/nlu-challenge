@@ -4,7 +4,7 @@ import Slider from "../Sliders/Slider";
 import "../HomePage/home.css";
 import "../../media.css";
 import Reviews from "../UsersReviews/Reviews";
-
+// import AdminPage from "../AdminPage/AdminPage";
 
 function Home() {
   return (
@@ -20,6 +20,7 @@ function Home() {
         </div>
         <UserForm />
         <Reviews/>
+        {/* <AdminPage/> */}
       </div>
     </div>
   );

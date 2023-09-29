@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import '../Breadcrumbs/breadcrumbs.css';
+import './breadcrumbs.css';
 
-function Breadcrumbs() {
+function Breadcrumps() {
    const location = useLocation();
    let currentLink = '';
 
@@ -15,7 +15,6 @@ function Breadcrumbs() {
       </div>)
    })
 
-   console.log(crumbs)
   return (
     <div className="breadcrumps container">
       {crumbs}
@@ -23,4 +22,4 @@ function Breadcrumbs() {
   )
 }
 
-export default Breadcrumbs;
+export default Breadcrumps
