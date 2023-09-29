@@ -51,4 +51,3 @@ function Navigation() {
 }
 
 export default Navigation;
-          // <header ref={elementRef} className={`header container ${isFixed ? 'fixed' : ''}`}>
