@@ -1,7 +1,7 @@
 import React from "react";
 
 function Capabilities(select) {
-  return <div>
+  return <div className="main_content container">
     Capabilities
   </div>;
 }

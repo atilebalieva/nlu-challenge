@@ -35,7 +35,7 @@
    opacity: 0;
 }
 
-.modal.modal_open {
+.modal_open {
    visibility: visible;
    opacity: 1;
 }
@@ -58,7 +58,7 @@
    font-family: inherit;
 }
 
-.modal.modal_overlay {
+.modal_overlay {
    position: absolute;
    top: 0;
    left: 0;
@@ -75,10 +75,10 @@
 }
 
 .iframe_video {
-   width: 560px!important;
-   height: 315px!important;
-   min-width: auto!important;
-   min-height: auto!important;
+   width: 560px;
+   height: 315px;
+   max-width: 100%;
+   max-height: 100%;
 }
 
 /*  */
@@ -88,7 +88,8 @@
    color: white;
    position: absolute;
    top: 28%;
-   left: 45%
+   left: 45%;
+   cursor: pointer;
 }
 
 .review-text {

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import flavorImg from "../../images/flavors.png";
 import "./flavors.css";
 import { useNavigate } from "react-router-dom";
 
@@ -18,12 +17,12 @@ function Flavors() {
   },[]);
   
   return (
-      <div className="flavors-container container">
+      <div className="flavors-container container main_content">
         {flavors?.map((category) => {
           return ( 
             <div key={category.id} onClick={()=>{navigate(`/flavors/${category.id}`)}} className="flavor_cards">
-              <div className="">
-              <img src={flavorImg} alt="flavor" />
+              <div className="flavors_image">
+               <img src={`${process.env.PUBLIC_URL} ${category.img}`} alt="flavor" />
               </div>
               <p>{category.name}</p>
             </div>

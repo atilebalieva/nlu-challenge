@@ -2,7 +2,7 @@ import React from 'react'
 
 function Production() {
   return (
-    <div>Production</div>
+    <div className="main_content container">Production</div>
   )
 }
 

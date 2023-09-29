@@ -1,18 +1,18 @@
 {
   "categories": [
-   { "id": "soft-fruits", "name": "Soft Fruits" },
-   { "id": "citrus", "name": "Citrus" },
-   { "id": "tropical", "name": "Tropical" },
-   { "id": "beverage", "name": "Beverage" },
-   { "id": "functional-rendy", "name": "Functional and Trendy" },
-   { "id": "sweet-brown", "name": "Sweet-Brown" },
-   { "id": "floral-aromatic", "name": "Floral-Aromatic" },
-   { "id": "dairy", "name": "Dairy" },
-   { "id": "nut", "name": "Nut" },
-   { "id": "savory", "name": "Savory" },
-   { "id": "spice", "name": "Spice" },
-   { "id": "vegetable", "name": "Vegetable" },
-   { "id": "meat", "name": "Meat" }
+   { "id": "soft-fruits", "name": "Soft Fruits", "img": "/images/soft-fruits.jpg"},
+   { "id": "citrus", "name": "Citrus", "img": "/images/citrus.jpg" },
+   { "id": "tropical", "name": "Tropical", "img": "/images/tropical.jpg" },
+   { "id": "beverage", "name": "Beverage", "img": "/images/beverage.jpg"},
+   { "id": "functional-rendy", "name": "Functional and Trendy", "img": "/images/functional.jpg" },
+   { "id": "sweet-brown", "name": "Sweet-Brown", "img": "/images/sweet-brown.jpg" },
+   { "id": "floral-aromatic", "name": "Floral-Aromatic", "img": "/images/floral-aromatic.jpg" },
+   { "id": "dairy", "name": "Dairy", "img": "/images/dairy.jpg" },
+   { "id": "nut", "name": "Nut", "img": "/images/nut.jpg" },
+   { "id": "savory", "name": "Savory", "img": "/images/savory.png" },
+   { "id": "spice", "name": "Spice", "img": "/images/spice.jpg" },
+   { "id": "vegetable", "name": "Vegetable", "img": "/images/vegetable.png" },
+   { "id": "meat", "name": "Meat", "img": "/images/meat.png"}
   ],
 
   "flavors": [

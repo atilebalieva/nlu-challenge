@@ -2,7 +2,7 @@ import React from 'react'
 
 function Design() {
   return (
-    <div>Design</div>
+    <div className="main_content container">Design</div>
   )
 }
 
