@@ -16,6 +16,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  padding: 0 !important;
  }
  
  .header nav {
@@ -31,7 +32,7 @@
  .search_icon {
   position: absolute;
   top: 40%;
-  right: 2%;
+  right: 5%;
  }
 
  .burger_icon {
@@ -67,7 +68,6 @@
  @media only screen and (max-width: 768px) {
   .burger_icon {
      display: block;
-
   }
 
   .desktop-nav {

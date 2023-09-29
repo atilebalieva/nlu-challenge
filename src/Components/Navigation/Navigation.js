@@ -4,6 +4,7 @@ import NavElements from "./NavElements";
 import {FaSearch} from "react-icons/fa";
 import {FaBars} from "react-icons/fa";
 import "../../media.css";
+import Breadcrumps from "../Breadcrumps/Breadcrumps";
 
 function Navigation() {
   const elementRef = useRef();
@@ -38,13 +39,14 @@ function Navigation() {
 
   return (
     <header ref={elementRef} className={`header container ${isFixed ? 'fixed' : ''}`}>
-    <div className={`desktop-nav ${isOpenNav ? 'show' : ''}`}>
+    <div className={`desktop-nav container${isOpenNav ? 'show' : ''}`}>
           <NavElements/>
           <div className="nav_search">
              <input type="text" name="search" placeholder="Find your favorite Flavor" />
              <FaSearch className="search_icon"/>
           </div>
     </div>
+    <Breadcrumps/>
     <FaBars className="burger_icon" onClick={handleMenu}/>
       </header>
   )

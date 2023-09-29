@@ -1,0 +1,25 @@
+.breadcrumps {
+   max-width: 1200px;
+   font-size: 12px;
+   padding: 0 !important;
+}
+
+.breadcrumps > * {
+   display: inline-block;
+   margin-right: 10px;
+}
+
+.breadcrumps .crumb::after {
+   content: '>';
+   margin-left: 10px;
+}
+
+.breadcrumps .crumb:last-child::after,
+.breadcrumps .crumb:first-child::after {
+  display: none;
+}
+
+.breadcrumps .crumb a {
+   color: rgb(47, 53, 88);
+}
+
