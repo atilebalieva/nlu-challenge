@@ -1,12 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../Navigation/Navigation.css";
+import "../Navigation/navigation.css";
 import NavElements from "./NavElements";
 import {FaSearch} from "react-icons/fa";
-import "../../css/media.css";
+import {FaBars} from "react-icons/fa";
+import "../../media.css";
 
 function Navigation() {
   const elementRef = useRef();
   const [isFixed, setFixed] = useState(false);
+  const [isOpenNav, setOpenNav] = useState(false);
+
+  function handleMenu(){
+    setOpenNav((prev)=> prev ? false : true );
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,15 +38,17 @@ function Navigation() {
 
   return (
     <header ref={elementRef} className={`header container ${isFixed ? 'fixed' : ''}`}>
-    <div className="desktop-nav">
+    <div className={`desktop-nav ${isOpenNav ? 'show' : ''}`}>
           <NavElements/>
           <div className="nav_search">
              <input type="text" name="search" placeholder="Find your favorite Flavor" />
              <FaSearch className="search_icon"/>
-           </div>
-        </div>
+          </div>
+    </div>
+    <FaBars className="burger_icon" onClick={handleMenu}/>
       </header>
   )
 }
 
 export default Navigation;
+          // <header ref={elementRef} className={`header container ${isFixed ? 'fixed' : ''}`}>

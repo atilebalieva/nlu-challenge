@@ -12,7 +12,7 @@ import Design from "./Components/Capabilities/Design";
 import FlavorsList from "./Components/Flavors/FlavorsList";
 import Navigation from "./Components/Navigation/Navigation";
 import CompanyInfo from "./Components/CompanyInfo/CompanyInfo";
-import "./css/media.css";
+import "./media.css";
 
 function App() {
   return (

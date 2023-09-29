@@ -1,12 +1,12 @@
 import React from 'react'
 import Dropdown from '../Dropdown/Dropdown';
 import { Link } from 'react-router-dom'
-import "../Navigation/Navigation.css";
+import "../Navigation/navigation.css";
 import jsonData from "../../db/db.json";
 
 function NavElements() {
   const capabilities = {
-    name: "Capability",
+    name: "Capabilities",
     link: "/capabilities/",
     categories: [{categoryId: "design", name: "Design"}, {categoryId: "production", name: "Production"}, {categoryId: "certification", name: "Certification"}]
   }

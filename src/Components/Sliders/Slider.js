@@ -5,7 +5,7 @@ import certificationImg from "../../images/slider_3.jpg";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { Link } from 'react-router-dom';
-import '../Sliders/Slider.css';
+import '../Sliders/slider.css';
 
 const items = [
  <Link to="/design" className="slider-item">

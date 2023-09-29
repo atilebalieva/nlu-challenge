@@ -1,8 +1,8 @@
 import React from "react";
 import UserForm from "../UserForm/UserForm";
 import Slider from "../Sliders/Slider";
-import "../HomePage/Home.css";
-import "../../css/media.css";
+import "../HomePage/home.css";
+import "../../media.css";
 
 function Home() {
   return (

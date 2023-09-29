@@ -1,19 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import jsonData from '../../db/db.json';
 import { v4 as uuidv4 } from "uuid";
 
 function FlavorsList() {
+   const [flavor, setFlavor] = useState();
    const params = useParams();
-   const listOfFlavors = jsonData.flavors.filter(category=>{
-      return category.categoryId === params.id;
-   });
+   const getFlavor = () => {
+     fetch(`http://localhost:3000/flavors/${params.id}`)
+     .then((response) => response.json())
+     .then(data => setFlavor(data));
+   };
+ 
+   useEffect(() => {
+     getFlavor();
+   },[]);
+
   return (
     <div className="container border">
       <input type="text" id="search" placeholder="Search for a flavor"></input>
-      <h3>{listOfFlavors[0].name}</h3>
+      <h3>{flavor?.name}</h3>
       <ul>
-         {listOfFlavors[0].list.map(item=>{
+         {flavor?.list?.map(item=>{
           return (
              <li key={uuidv4()}>{item}</li>
          )
@@ -22,5 +29,4 @@ function FlavorsList() {
     </div>
   )
 }
-
 export default FlavorsList

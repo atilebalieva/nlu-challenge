@@ -1,10 +1,10 @@
 .header {
-  padding: 25px 10px;
+  padding: 20px 10px;
   position: relative;
   background-color: white;
  }
 
- .fixed {
+.fixed {
   position: fixed;
   top: 0;
   z-index: 1;
@@ -34,6 +34,15 @@
   right: 2%;
  }
 
+ .burger_icon {
+  font-size: 20px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  display: none;
+  cursor: pointer;
+  }
+
  .navigation {
   display: flex;
   align-items: center;
@@ -48,5 +57,36 @@
  }
  
  .link:hover {
-  color: #1548e2;
+   color: #1548e2;
+ }
+
+ .desktop-nav.show {
+  display: block;
+ }
+
+ @media only screen and (max-width: 768px) {
+  .burger_icon {
+     display: block;
+
+  }
+
+  .desktop-nav {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+   }
+
+   .nav_search {
+    margin-top: 20px;
+   }
+
+   .search_icon {
+    display: none;
+   }
+
+   .navigation {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+   }
 }

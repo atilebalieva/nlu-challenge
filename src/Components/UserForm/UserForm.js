@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../UserForm/UserForm.css'
+import '../UserForm/userForm.css'
 
 function UserForm() {
  const [formData, setFormData] = useState({
