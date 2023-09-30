@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom'
 import "../Navigation/navigation.css";
 
 function NavElements() {
+  const capabilitiesCategory = [{id: "design", name: "Design"}, {id: "production", name: "Production"}, {id: "certification", name: "Certification"}];
   const [flavorCategories, setFlavorCategories] = useState();
    const getFlavorCategories = () => {
-     fetch(`http://localhost:3000/categories`)
+     fetch(`https://hot-handsomely-honey.glitch.me/categories`)
      .then((response) => response.json())
      .then(data => setFlavorCategories(data));
    };
@@ -18,7 +19,7 @@ function NavElements() {
   const capabilities = {
     name: "Capabilities",
     link: "/capabilities/",
-    categories: [{id: "design", name: "Design"}, {id: "production", name: "Production"}, {id: "certification", name: "Certification"}]
+    categories: capabilitiesCategory
   }
 
   const flavors = {

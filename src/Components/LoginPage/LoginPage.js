@@ -8,26 +8,24 @@ function LoginPage() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
+  const [isWrong, setIsWrong]= useState(false);
 
   function handleSubmit(event) {
     event.preventDefault();
     if(username === "admin" && password === "admin"){
-      // navigate("/login/login")
-      console.log("works");
+      navigate("/admin");
     }else {
-      alert("Wrong username or password")
+      setIsWrong(true);
     }
     
   }
-
 
   return (
     <div className="login-page_container container main_content">
       <div className="login-page_logo">
          <Logo/>
          <p>Professionals Who Achieve</p>
-         <p>People Who Inspire.</p>
+         <p className="login-page_logo_span">People Who Inspire.</p>
       </div>
       <div className="login-page_form">
           <form onSubmit={handleSubmit}>
@@ -35,6 +33,7 @@ function LoginPage() {
              <input type="password" placeholder="Password" required onChange={(e)=>{setPassword(e.target.value)}}/>
              <button type="submit">Log In</button>
           </form>
+          {isWrong && <p className="login-page_fill-description">Wrong username or password</p>}
          <p>Forgot password?</p>
          <button type="button">Create an Account</button>
       </div>

@@ -9,4 +9,4 @@ function Production() {
   )
 }
 
-export default Production
+export default Production;

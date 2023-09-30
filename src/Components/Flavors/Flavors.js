@@ -7,7 +7,7 @@ function Flavors() {
   const navigate = useNavigate();
 
   const getFlavors = () => {
-    fetch('http://localhost:3000/categories')
+    fetch('https://hot-handsomely-honey.glitch.me/categories')
     .then((response) => response.json())
     .then((data) => setFlavors(data))
   };
@@ -17,7 +17,9 @@ function Flavors() {
   },[]);
   
   return (
-      <div className="flavors-container container main_content">
+      <div className="container main_content flavors">
+        <h2>Flavors</h2>
+        <div className="flavors-container">
         {flavors?.map((category) => {
           return ( 
             <div key={category.id} onClick={()=>{navigate(`/flavors/${category.id}`)}} className="flavor_cards">
@@ -28,6 +30,7 @@ function Flavors() {
             </div>
           );
         })}
+        </div>
       </div>
   );
 }

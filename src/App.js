@@ -14,6 +14,7 @@ import Navigation from "./Components/Navigation/Navigation";
 import CompanyInfo from "./Components/CompanyInfo/CompanyInfo";
 import LoginPage from "./Components/LoginPage/LoginPage";
 import "./media.css";
+import AdminPage from "./Components/AdminPage/AdminPage";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/capabilities/production" element={<Production/>}></Route>
         <Route path="/capabilities/design" element={<Design/>}></Route>
         <Route path="/login" element={<LoginPage/>}></Route>
+        <Route path="/admin" element={<AdminPage/>}></Route>
       </Routes>
       <Footer/>
     </div>

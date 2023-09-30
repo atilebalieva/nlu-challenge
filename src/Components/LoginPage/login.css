@@ -1,3 +1,7 @@
+.login-wrapper {
+   cursor: pointer;
+}
+
 .login {
    width: 25px;
    height: 25px;

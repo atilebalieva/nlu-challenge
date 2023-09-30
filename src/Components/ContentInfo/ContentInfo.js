@@ -25,4 +25,4 @@ function ContentInfo() {
   )
 }
 
-export default ContentInfo
+export default ContentInfo;

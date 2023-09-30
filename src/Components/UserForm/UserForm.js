@@ -5,11 +5,13 @@ function UserForm() {
  const [formData, setFormData] = useState({
   userInput: '',
   email: '',
-  phone: '',
   selectedOption: '',
   comments: '',
-  isChecked: false
+  isChecked: false,
+  date: ''
  });
+ 
+ const [isSubmit, setIsSubmit] = useState(false);
 
  const handleInputChange = (e) => {
   const { name, value, type, checked } = e.target;
@@ -17,37 +19,42 @@ function UserForm() {
   setFormData({
     ...formData,
     [name]: inputValue,
+    date: new Date().toLocaleString()
   });
  };
 
- const handleSubmit = (e) => {
+ const handleSubmit = async (e) => {
   e.preventDefault();
-  console.log('User Input:', formData.userInput);
-  console.log('User Input:', formData.email);
-  console.log('User Input:', formData.phone);
-  console.log('Selected Option:', formData.selectedOption);
-  console.log('Text Area Input:', formData.comments);
-  console.log('Text Area Input:', formData.isChecked);
+  setIsSubmit(true);
+
+  const response = await fetch('https://hot-handsomely-honey.glitch.me/quotes', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+  const result = await response.json();
+  console.log(result);
   
     setFormData({
     userInput: '',
     email: '',
-    phone: '',
     selectedOption: '',
     comments: '',
-    isChecked: false
+    isChecked: false,
+    date: ''
   });
 };
   return (
     <div className="form_container">
-      <h3>Requesta A Quote</h3>
+      <h3>Request a quote</h3>
       <form onSubmit={handleSubmit}>
         <div className="form_inputs">
         <input type="text" name="userInput" value={formData.userInput} placeholder="Full name" onChange={handleInputChange} required/>
         <input type="email" name="email" value={formData.email} placeholder="Email Adress" onChange={handleInputChange} required/>
         </div>
         <div className="form_inputs">
-        <input type="number" name="phone" value={formData.phone} placeholder="Phone No." onChange={handleInputChange} required/>
         <select name="selectedOption" value={formData.selectedOption} onChange={handleInputChange} required>
           <option value="">Select a capability</option>
           <option value="design">Design</option>
@@ -62,14 +69,15 @@ function UserForm() {
           rows="5"
           placeholder="Message"
           value={formData.comments}
-          onChange={handleInputChange}
+          onChange={handleInputChange} required
         ></textarea>
-        <div>
-        <input type="checkbox" name="isChecked" id="getLetters" checked={formData.isChecked} onChange={handleInputChange}/>
-        <label htmlFor="getLetters">I'd like to receive the newsletter</label>
+        <div className="getLetters">
+          <input type="checkbox" name="isChecked" id="getLetters" checked={formData.isChecked} onChange={handleInputChange}/>
+          <label htmlFor="getLetters">I'd like to receive the newsletter</label>
         </div>
         <button type="submit">Get a quote</button>
       </form>
+      {isSubmit && <p className="description-thanks">Thank you for your request! We will review it as soon as possible.</p>}
     </div>
   );
 }

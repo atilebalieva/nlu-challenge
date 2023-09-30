@@ -7,6 +7,10 @@
   margin-bottom: 40px;
 }
 
+.flavors h2{
+   text-align: center;
+}
+
 .flavor_cards {
   box-shadow: 0px 1px 7px 2px rgb(190, 190, 190);
   padding: 20px 20px 15px 20px;
@@ -18,7 +22,6 @@
   width: 300px;
   max-width: 100%; 
   height: 220px;
-  border-radius: 10px;
 }
 
 .flavor_cards p {
@@ -30,7 +33,7 @@
  position: relative;
  overflow: hidden;
  max-width: 300px;
- box-shadow: 0px 1px 11px 2px #f7d8d8;
+ border: 1px solid rgb(230, 228, 228);
 }
 
 .flavors_image::after {
@@ -110,7 +113,6 @@
  font-size: 21px;
 }
 
-
 .flavors-list {
  columns: 3;
  margin-right: 25px;
@@ -133,6 +135,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+
  .flavors-list_container  {
    flex-wrap: wrap;
  }

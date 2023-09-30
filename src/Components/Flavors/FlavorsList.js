@@ -8,7 +8,7 @@ function FlavorsList() {
    const [flavor, setFlavor] = useState();
    const params = useParams();
    const getFlavor = () => {
-     fetch(`http://localhost:3000/flavors/${params.id}`)
+     fetch(`https://hot-handsomely-honey.glitch.me/flavors/${params.id}`)
      .then((response) => response.json())
      .then(data => setFlavor(data));
    };
@@ -38,4 +38,4 @@ function FlavorsList() {
     </div>
   )
 }
-export default FlavorsList
+export default FlavorsList;

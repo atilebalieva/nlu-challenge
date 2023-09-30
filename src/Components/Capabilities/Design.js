@@ -9,4 +9,4 @@ function Design() {
   )
 }
 
-export default Design
+export default Design;

@@ -19,3 +19,7 @@
 .main_info_text h1 {
  margin-bottom: 10px;
 }
+
+.main_info_block h2 span {
+ color: rgb(53, 102, 215);
+}
