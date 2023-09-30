@@ -3,8 +3,8 @@ import "./App.css";
 import Home from "./Components/HomePage/Home";
 import Capabilities from "./Components/Capabilities/Capabilities";
 import Flavors from "./Components/Flavors/Flavors";
-import AboutUs from "./Components/AboutUs";
-import ContactUs from "./Components/ContactUs";
+import AboutUs from "./Components/AboutUs/AboutUs";
+import ContactUs from "./Components/ContactUs/ContactUs";
 import Footer from "./Components/Footer/Footer";
 import Certification from "./Components/Capabilities/Certification";
 import Production from "./Components/Capabilities/Production";
@@ -12,6 +12,7 @@ import Design from "./Components/Capabilities/Design";
 import FlavorsList from "./Components/Flavors/FlavorsList";
 import Navigation from "./Components/Navigation/Navigation";
 import CompanyInfo from "./Components/CompanyInfo/CompanyInfo";
+import LoginPage from "./Components/LoginPage/LoginPage";
 import "./media.css";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/capabilities/certification" element={<Certification/>}></Route>
         <Route path="/capabilities/production" element={<Production/>}></Route>
         <Route path="/capabilities/design" element={<Design/>}></Route>
+        <Route path="/login" element={<LoginPage/>}></Route>
       </Routes>
       <Footer/>
     </div>
