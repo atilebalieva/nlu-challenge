@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Dropdown from '../Dropdown/Dropdown';
 import { Link } from 'react-router-dom'
-import "../Navigation/navigation.css";
+import "./navigation.css";
 
 function NavElements() {
   const capabilitiesCategory = [{id: "design", name: "Design"}, {id: "production", name: "Production"}, {id: "certification", name: "Certification"}];
@@ -48,4 +48,4 @@ function NavElements() {
   )
 }
 
-export default NavElements
+export default NavElements;

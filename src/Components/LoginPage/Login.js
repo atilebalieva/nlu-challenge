@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {FaUserAlt} from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import '../LoginPage/login.css';
+import './login.css';
 import '../CompanyInfo/companyInfo.css';
 import '../../media.css';
 
