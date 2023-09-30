@@ -21,7 +21,9 @@ function FlavorsList() {
     <div className="flavors-list_container main_content container">
       <div className="flavors-list_block">
         <h3>{flavor?.name}</h3>
+        <div className="line-space">
           <FaPagelines className="flavors-list_icon"/>
+        </div>
           <ul className="flavors-list">
          {flavor?.list?.map(item=>{
           return (

@@ -73,35 +73,43 @@
 
 .flavors-list_block h3 {
  color: #082376;
+ text-align: center;
+}
+
+.line-space {
+ position: relative;
+ overflow: hidden;
+ text-align: center;
+ margin-top: 7px;
+}
+
+.line-space::before {
+ width: 1200px;
+ height: 1px;
+ top: 50%;
+ left: 50%;
+ content: "";
+ position: absolute;
+ margin-left: 20px;
+ border-top: 1px dashed #45bf61;
+}
+
+.line-space::after {
+ width: 1200px;
+ height: 1px;
+ top: 50%;
+ right: 50%;
+ content: "";
+ position: absolute;
+ margin-right: 20px;
+ border-top: 1px dashed #45bf61;
 }
 
 .flavors-list_icon {
  color: #45bf61;
  font-size: 21px;
 }
-/* 
-.flavors-list_block::before {
- width: 30px;
- height: 1px;
- top: 5%;
- left: -2%;
- content: "";
- position: absolute;
- margin-left: 20px;
- border-top: 2px dashed #45bf61;
-}
 
-.flavors-list_block::after {
- width: 30px;
- height: 1px;
- top: 5%;
- left: 8%;
- content: "";
- position: absolute;
- margin-left: 20px;
- border-top: 2px dashed #45bf61;
-}
-*/
 
 .flavors-list {
  columns: 3;
@@ -125,10 +133,6 @@
 }
 
 @media only screen and (max-width: 768px) {
- /* .flavors-list {
-   columns: 2;
- } */
-
  .flavors-list_container  {
    flex-wrap: wrap;
  }
