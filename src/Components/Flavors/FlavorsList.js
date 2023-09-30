@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, useSearchParams } from 'react-router-dom';
 import { v4 as uuidv4 } from "uuid";
 import UserForm from "../UserForm/UserForm";
 import {FaPagelines} from "react-icons/fa";
 
 function FlavorsList() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const highlightWord = searchParams.get("highlight")
+  
    const [flavor, setFlavor] = useState();
    const params = useParams();
    const getFlavor = () => {
@@ -15,8 +18,7 @@ function FlavorsList() {
    
    useEffect(() => {
      getFlavor();
-   },[]);
-
+   },[params]);
   return (
     <div className="flavors-list_container main_content container">
       <div className="flavors-list_block">
@@ -27,7 +29,8 @@ function FlavorsList() {
           <ul className="flavors-list">
          {flavor?.list?.map(item=>{
           return (
-             <li key={uuidv4()}>{item}</li>
+            <li key={uuidv4()} className={highlightWord === item ? "highlight" : ""}>{item}</li>
+            
          )
       })}
       </ul>
