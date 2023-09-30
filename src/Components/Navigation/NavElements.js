@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Dropdown from '../Dropdown/Dropdown';
 import { Link } from 'react-router-dom'
-import "./navigation.css";
+import "./Navigation.css";
 
 function NavElements() {
   const capabilitiesCategory = [{id: "design", name: "Design"}, {id: "production", name: "Production"}, {id: "certification", name: "Certification"}];

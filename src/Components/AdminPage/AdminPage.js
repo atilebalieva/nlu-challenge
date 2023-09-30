@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {FaTrashAlt} from 'react-icons/fa';
-import '../AdminPage/adminPage.css';
+import './adminPage.css';
 
 function AdminPage() {
   const [quotes, setQuotes] = useState();

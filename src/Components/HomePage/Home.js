@@ -1,7 +1,7 @@
 import React from "react";
 import UserForm from "../UserForm/UserForm";
 import Slider from "../Sliders/Slider";
-import "./home.css";
+import "./Home.css";
 import "../../media.css";
 import Reviews from "../UsersReviews/Reviews";
 

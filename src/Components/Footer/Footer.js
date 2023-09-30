@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
-import "../Footer/footer.css"
+import "./footer.css"
 
 function Footer() {
   const [year, setYear] = useState();

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./navigation.css";
+import "./Navigation.css";
 import NavElements from "./NavElements";
 import {FaSearch} from "react-icons/fa";
 import {FaBars} from "react-icons/fa";

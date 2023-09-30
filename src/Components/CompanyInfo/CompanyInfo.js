@@ -1,6 +1,6 @@
 import React from 'react';
 import {FaFacebookF, FaTwitter, FaInstagramSquare, FaPhoneAlt, FaRegClock} from 'react-icons/fa';
-import '../CompanyInfo/companyInfo.css';
+import './companyInfo.css';
 import '../../media.css';
 import Login from '../LoginPage/Login'
 import Logo from '../Logo/Logo';

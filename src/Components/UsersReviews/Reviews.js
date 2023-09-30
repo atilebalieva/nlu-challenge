@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {FaRegPlayCircle} from 'react-icons/fa';
-import '../UsersReviews/reviews.css';
+import './reviews.css';
 
 function Reviews({icon, name, position}) {
    const link = "https://media.geeksforgeeks.org/wp-content/uploads/20200513195558/Placement100-_-GeeksforGeeks-1.mp4";

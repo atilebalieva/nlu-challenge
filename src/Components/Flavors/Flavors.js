@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./flavors.css";
+import "./Flavors.css";
 import { useNavigate } from "react-router-dom";
 
 function Flavors() {

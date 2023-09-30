@@ -1,5 +1,5 @@
 import React from 'react';
-import '../ContentInfo/contentInfo.css'
+import './contentInfo.css'
 
 function ContentInfo() {
   return (
