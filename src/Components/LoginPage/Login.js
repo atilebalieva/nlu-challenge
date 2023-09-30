@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {FaUserAlt} from 'react-icons/fa';
-import {Link, useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../LoginPage/login.css';
 import '../CompanyInfo/companyInfo.css';
 import '../../media.css';

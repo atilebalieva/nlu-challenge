@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import {FaRegStar} from 'react-icons/fa';
+import React, { useState } from 'react';
 import {FaRegPlayCircle} from 'react-icons/fa';
 import '../UsersReviews/reviews.css';
 
