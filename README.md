@@ -1,6 +1,21 @@
 # NLU Test Project
 
 ![](/screenshots/01.png)
+![](/screenshots/02.png)
+![](/screenshots/03.png)
+![](/screenshots/04.png)
+![](/screenshots/05.png)
+![](/screenshots/06.png)
+![](/screenshots/07.png)
+![](/screenshots/08.png)
+![](/screenshots/09.png)
+![](/screenshots/10.png)
+![](/screenshots/11.png)
+![](/screenshots/12.png)
+![](/screenshots/13.png)
+![](/screenshots/14.png)
+![](/screenshots/15.png)
+![](/screenshots/16.png)
 
 ## Live demo
 
@@ -10,11 +25,9 @@
 
 ## Extra features
 
-Testimonials on the home page.
-
-Search with autocompletion.
-
-Admin pages: login, view and delete quotes.
+- Testimonials on the home page.
+- Search with autocompletion.
+- Admin pages: login, view and delete quotes.
 
 ## Solving approach
  
