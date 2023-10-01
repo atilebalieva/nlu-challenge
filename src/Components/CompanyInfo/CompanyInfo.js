@@ -5,7 +5,7 @@ import '../../media.css';
 import Login from '../LoginPage/Login'
 import Logo from '../Logo/Logo';
 
-function CompanyInfo() {
+function CompanyInfo({track}) {
   return (
     <div className="container company-info">
       <ul className="company-info_list">
@@ -34,7 +34,7 @@ function CompanyInfo() {
           </ul>
         </li>
         <li>
-          <Login/>
+          <Login path={track}/>
         </li>
       </ul>
     </div>
