@@ -37,4 +37,9 @@
    pointer-events: none;
    color: rgb(194, 194, 193);
 }
- 
+
+@media only screen and (max-width: 768px) {
+   .breadcrumbs {
+      margin-top: 20px;
+   }
+}

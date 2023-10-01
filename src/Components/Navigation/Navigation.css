@@ -30,6 +30,7 @@
   position: relative;
   
  }
+
  .header input:focus {
    outline: none;
  }
@@ -84,7 +85,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
  .desktop-nav.show {
   display: flex;
-  gap: 0;
+  gap: 10px;
  }
 
  .nav-search_menu {
