@@ -9,13 +9,13 @@ import './Slider.css';
 import '../../media.css';
 
 const items = [
- <Link to="/design" className="slider-item">
+ <Link to="/capabilities/design" className="slider-item">
      <img src={productionImg} alt="design" />
   </Link>,
-  <Link to="/production" className="slider-item ">
+  <Link to="/capabilities/production" className="slider-item ">
      <img src={designImg} alt="production" />
   </Link>,
-  <Link to="/certification" className="slider-item">
+  <Link to="/capabilities/certification" className="slider-item">
      <img src={certificationImg} art="certification" />
   </Link>
 ];

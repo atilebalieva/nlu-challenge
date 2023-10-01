@@ -18,7 +18,7 @@ import AdminPage from "./Components/AdminPage/AdminPage";
 
 function App() {
   return (
-    <div className="main_container">
+    <div className="main_container main_content">
       <CompanyInfo/>
       <Navigation/>
       <Routes>
