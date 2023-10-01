@@ -19,7 +19,7 @@
 
 ## Live demo
 
-[Demo on Netlify](https://voluble-blancmange-7fa206.netlify.app).
+[Demo on Netlify](https://jolly-frangipane-8861db.netlify.app/).
 
 **Note**. The application has a login section. Please use "admin/admin" (username/password) to login.
 
