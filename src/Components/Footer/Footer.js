@@ -15,11 +15,11 @@ function Footer() {
         <div className="container">
          <p>Copyright © {year}. All rights reserved.</p>
          <Link to="">
-          <img src={logo} alt="Logo" />
-          </Link>
+            <img src={logo} alt="Logo" />
+         </Link>
         </div>
-      
       </footer>
   );
 }
+
 export default Footer;

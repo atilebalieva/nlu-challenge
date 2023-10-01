@@ -28,7 +28,6 @@
   padding: 10px;
   max-width: 100%;
   position: relative;
-  
  }
 
  .header input:focus {
@@ -55,7 +54,9 @@
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { display: none; }
+input[type="search"]::-webkit-search-results-decoration { 
+    display: none; 
+  }
 
  .burger_icon {
   font-size: 20px;
@@ -64,7 +65,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   top: 2%;
   display: none;
   cursor: pointer;
-  }
+ }
 
  .navigation {
   display: flex;

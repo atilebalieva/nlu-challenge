@@ -5,16 +5,15 @@ import './login.css';
 import '../CompanyInfo/companyInfo.css';
 import '../../media.css';
 
-
 function Login() {
   const [isLogin, setIsLogin] = useState(true);
   const navigate = useNavigate();
 
-  function handleClick(){
-    if(isLogin){
+  function handleClick() {
+    if (isLogin) {
       navigate('/login');
       setIsLogin(false);
-    }else {
+    } else {
       navigate('/');
       setIsLogin(true);
     }

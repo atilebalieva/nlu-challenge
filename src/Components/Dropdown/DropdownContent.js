@@ -8,9 +8,10 @@ function DropdownContent({items, onMouseLeave}) {
     <div>
         <ul className="dropdown-content" id={menuId} onClick={onMouseLeave}>
         {items.categories.map((item) => {
-          return <li className="dropdown-item" key={uuidv4()}>
-          <Link to={items.link + item.id}>{item.name}</Link>
-        </li>;
+          return (
+          <li className="dropdown-item" key={uuidv4()}>
+            <Link to={items.link + item.id}>{item.name}</Link>
+          </li>)
         })}
         </ul>
     </div>

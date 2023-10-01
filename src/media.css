@@ -44,14 +44,12 @@
    .login {
       margin: 0 20px  !important;
    }
-
 }
 
 @media only screen and (max-width: 600px) {
-
    .chicago li ul > li {
       margin-left: 20px !important;
-  }
+   }
 
   .chicago > li, .other_addresses > li {
      margin-left: 0px !important;
@@ -63,5 +61,4 @@
    .reviews_container  {
       width: 100%;
    }
-   
 }

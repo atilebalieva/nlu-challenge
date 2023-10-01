@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useSearchParams } from 'react-router-dom';
-import { v4 as uuidv4 } from "uuid";
-import UserForm from "../UserForm/UserForm";
-import {FaPagelines} from "react-icons/fa";
+import { v4 as uuidv4 } from 'uuid';
+import UserForm from '../UserForm/UserForm';
+import {FaPagelines} from 'react-icons/fa';
 
 function FlavorsList() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -12,13 +12,14 @@ function FlavorsList() {
    const params = useParams();
    const getFlavor = () => {
      fetch(`https://hot-handsomely-honey.glitch.me/flavors/${params.id}`)
-     .then((response) => response.json())
-     .then(data => setFlavor(data));
+        .then((response) => response.json())
+        .then(data => setFlavor(data));
    };
    
    useEffect(() => {
      getFlavor();
-   },[params]);
+   }, [params]);
+
   return (
     <div className="flavors-list_container main_content container">
       <div className="flavors-list_block">
@@ -27,18 +28,15 @@ function FlavorsList() {
           <FaPagelines className="flavors-list_icon"/>
         </div>
           <ul className="flavors-list">
-         {flavor?.list?.map(item=>{
-          return (
-            <li key={uuidv4()} className={highlightWord === item ? "highlight" : ""}>{item}</li>
-            
-         )
-      })}
-      </ul>
+            {flavor?.list?.map(item=>{
+                return (
+                  <li key={uuidv4()} className={highlightWord === item ? "highlight" : ""}>{item}</li>)
+            })}
+          </ul>
       </div>
       <UserForm/>
-      
-      
     </div>
   )
 }
+
 export default FlavorsList;

@@ -1,12 +1,12 @@
 import React from 'react';
-import designImg from "../../images/slider_1.jpg";
-import productionImg from "../../images/slider_2.jpg";
-import certificationImg from "../../images/slider_3.jpg";
+import designImg from '../../images/slider_1.jpg';
+import productionImg from '../../images/slider_2.jpg';
+import certificationImg from '../../images/slider_3.jpg';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { Link } from 'react-router-dom';
 import './Slider.css';
-import "../../media.css";
+import '../../media.css';
 
 const items = [
  <Link to="/design" className="slider-item">

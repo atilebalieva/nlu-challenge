@@ -14,12 +14,12 @@
 }
 
 .chicago > li,
-.other_addresses > li{
+.other_addresses > li {
    list-style: circle;
    margin-left: 40px;
 }
 
-.chicago li  ul > li{
+.chicago li  ul > li {
    list-style: square;
    margin-left: 80px;
 }

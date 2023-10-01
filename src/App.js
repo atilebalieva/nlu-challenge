@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="main_container">
       <CompanyInfo/>
-   <Navigation/>
+      <Navigation/>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/capabilities" element={<Capabilities />}></Route>

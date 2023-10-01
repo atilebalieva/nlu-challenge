@@ -3,7 +3,7 @@ import {FaTrashAlt} from 'react-icons/fa';
 import './adminPage.css';
 
 function AdminPage() {
-  const [quotes, setQuotes] = useState();
+   const [quotes, setQuotes] = useState();
    const getQuotes = () => {
      fetch(`https://hot-handsomely-honey.glitch.me/quotes`)
      .then((response) => response.json())
@@ -11,11 +11,10 @@ function AdminPage() {
    };
    
    useEffect(() => {
-    console.log("useEffect");
      getQuotes();
    },[]);
 
-   function handleDeleteQuote(quoteId){
+   function handleDeleteQuote(quoteId) {
     fetch('https://hot-handsomely-honey.glitch.me/quotes/' + quoteId, {
       method: 'DELETE',
       headers: {

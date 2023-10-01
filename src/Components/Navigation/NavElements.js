@@ -8,42 +8,42 @@ function NavElements() {
   const [flavorCategories, setFlavorCategories] = useState();
    const getFlavorCategories = () => {
      fetch(`https://hot-handsomely-honey.glitch.me/categories`)
-     .then((response) => response.json())
-     .then(data => setFlavorCategories(data));
+        .then((response) => response.json())
+        .then(data => setFlavorCategories(data));
    };
    
    useEffect(() => {
      getFlavorCategories();
-   },[]);
+   }, []);
 
   const capabilities = {
     name: "Capabilities",
     link: "/capabilities/",
     categories: capabilitiesCategory
-  }
+  };
 
   const flavors = {
     name: "Flavors",
     link: "/flavors/",
     categories: flavorCategories
-  }
+  };
 
   return (
    <nav>
-   <ul className="navigation">
-     <li>
-       <Dropdown items = {capabilities}/>
-     </li>
-     <li>
-       <Dropdown items = {flavors}/>
-     </li>
-     <li>
-       <Link to="/about-us" className="link">About Us</Link>
-     </li>
-     <li>
-      <Link to="/contact-us" className="link">Contact Us</Link>
-     </li>
-   </ul>
+      <ul className="navigation">
+        <li>
+            <Dropdown items = {capabilities}/>
+        </li>
+        <li>
+            <Dropdown items = {flavors}/>
+        </li>
+        <li>
+            <Link to="/about-us" className="link">About Us</Link>
+        </li>
+        <li>
+            <Link to="/contact-us" className="link">Contact Us</Link>
+        </li>
+      </ul>
  </nav>
   )
 }

@@ -32,19 +32,19 @@
 }
 
 .alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active {
- background-color: #949c1c;
+  background-color: #949c1c;
 }
 
 .alice-carousel__dots-item:not(.__custom) {
- background-color: #141c4d;
+  background-color: #141c4d;
 }
 
 .alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
- display: inline-block;
- cursor: pointer;
- padding: 0px 5px;
- margin: 0;
- border: 1px solid #2c64f6;
- border-radius: 50%;
- color: #2c64f6;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 5px;
+  margin: 0;
+  border: 1px solid #2c64f6;
+  border-radius: 50%;
+  color: #2c64f6;
 }

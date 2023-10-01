@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import './UserForm.css';
 import '../../media.css';
 
@@ -35,10 +35,10 @@ function UserForm() {
         'Content-Type': 'application/json'
       }
     });
+
   const result = await response.json();
-  console.log(result);
-  
-    setFormData({
+
+  setFormData({
     userInput: '',
     email: '',
     selectedOption: '',
@@ -52,16 +52,16 @@ function UserForm() {
       <h3>Request a quote</h3>
       <form onSubmit={handleSubmit}>
         <div className="form_inputs">
-        <input type="text" name="userInput" value={formData.userInput} placeholder="Full name" onChange={handleInputChange} required/>
-        <input type="email" name="email" value={formData.email} placeholder="Email Adress" onChange={handleInputChange} required/>
+          <input type="text" name="userInput" value={formData.userInput} placeholder="Full name" onChange={handleInputChange} required/>
+          <input type="email" name="email" value={formData.email} placeholder="Email Adress" onChange={handleInputChange} required/>
         </div>
         <div className="form_inputs">
-        <select name="selectedOption" value={formData.selectedOption} onChange={handleInputChange} required>
-          <option value="">Select a capability</option>
-          <option value="Design">Design</option>
-          <option value="Production">Production</option>
-          <option value="Certification">Certification</option>
-        </select>
+          <select name="selectedOption" value={formData.selectedOption} onChange={handleInputChange} required>
+            <option value="">Select a capability</option>
+            <option value="Design">Design</option>
+            <option value="Production">Production</option>
+            <option value="Certification">Certification</option>
+          </select>
         </div>
         <textarea 
           name="comments"
@@ -70,8 +70,8 @@ function UserForm() {
           rows="5"
           placeholder="Message"
           value={formData.comments}
-          onChange={handleInputChange} required
-        ></textarea>
+          onChange={handleInputChange} 
+          required></textarea>
         <div className="getLetters">
           <input type="checkbox" name="isChecked" id="getLetters" checked={formData.isChecked} onChange={handleInputChange}/>
           <label htmlFor="getLetters">I'd like to receive the newsletter</label>
@@ -82,4 +82,5 @@ function UserForm() {
     </div>
   );
 }
+
 export default UserForm;

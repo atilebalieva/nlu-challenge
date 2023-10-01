@@ -8,8 +8,8 @@ function Flavors() {
 
   const getFlavors = () => {
     fetch('https://hot-handsomely-honey.glitch.me/categories')
-    .then((response) => response.json())
-    .then((data) => setFlavors(data))
+      .then((response) => response.json())
+      .then((data) => setFlavors(data))
   };
 
   useEffect(() => {
@@ -28,7 +28,7 @@ function Flavors() {
               </div>
               <p>{category.name}</p>
             </div>
-          );
+          )
         })}
         </div>
       </div>

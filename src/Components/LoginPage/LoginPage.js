@@ -1,23 +1,21 @@
 import React, {useState} from 'react';
 import Logo from '../Logo/Logo';
-import "./loginPage.css";
+import './loginPage.css';
 import { useNavigate } from 'react-router-dom';
-
 
 function LoginPage() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [isWrong, setIsWrong]= useState(false);
+  const [isWrong, setIsWrong] = useState(false);
 
   function handleSubmit(event) {
     event.preventDefault();
-    if(username === "admin" && password === "admin"){
+    if (username === "admin" && password === "admin") {
       navigate("/admin");
-    }else {
+    } else {
       setIsWrong(true);
     }
-    
   }
 
   return (
@@ -37,7 +35,7 @@ function LoginPage() {
          <p>Forgot password?</p>
          <button type="button">Create an Account</button>
       </div>
-        </div>
+    </div>
   )
 }
 
