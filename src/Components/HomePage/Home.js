@@ -3,7 +3,7 @@ import UserForm from "../UserForm/UserForm";
 import Slider from "../Sliders/Slider";
 import "./Home.css";
 import "../../media.css";
-import Reviews from "../UsersReviews/Reviews";
+import ReviewsSlider from "../UsersReviews/ReviewsSlider";
 
 function Home() {
   return (
@@ -16,9 +16,9 @@ function Home() {
             <p>National  Louis University is an inclusive, innovate community providing educational opportunities that inspire and empower all learners as they prepare for and advance in meaningful lives and  productive careers.</p>
           </div>
           <h2>Everyones deserves an education  that helps them <span>reach  their potential</span>.</h2>
+          <ReviewsSlider/>
         </div>
         <UserForm />
-        <Reviews/>
       </div>
     </div>
   );

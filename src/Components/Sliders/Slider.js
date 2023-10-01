@@ -6,12 +6,13 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { Link } from 'react-router-dom';
 import './Slider.css';
+import "../../media.css";
 
 const items = [
  <Link to="/design" className="slider-item">
      <img src={productionImg} alt="design" />
   </Link>,
-  <Link to="/production" className="slider-item">
+  <Link to="/production" className="slider-item ">
      <img src={designImg} alt="production" />
   </Link>,
   <Link to="/certification" className="slider-item">

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import './UserForm.css'
+import './UserForm.css';
+import '../../media.css';
 
 function UserForm() {
  const [formData, setFormData] = useState({
@@ -57,9 +58,9 @@ function UserForm() {
         <div className="form_inputs">
         <select name="selectedOption" value={formData.selectedOption} onChange={handleInputChange} required>
           <option value="">Select a capability</option>
-          <option value="design">Design</option>
-          <option value="production">Production</option>
-          <option value="certification">Certification</option>
+          <option value="Design">Design</option>
+          <option value="Production">Production</option>
+          <option value="Certification">Certification</option>
         </select>
         </div>
         <textarea 

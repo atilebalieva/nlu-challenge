@@ -23,14 +23,14 @@ function CompanyInfo() {
           <FaPhoneAlt className="icon schedule_icon"/>
           <ul>
             <li>Contact Us</li>
-            <li>945 3482 458</li>
+            <li>(312) 261-3333</li>
           </ul>
         </li>
         <li className="company-info_sn">
           <ul className="company-info_schedule">
-          <li className="icons fb"><a href="#"><FaFacebookF className="icon sn"/></a></li>
-          <li className="icons tw"><a href=""><FaTwitter className="icon sn"/></a></li>
-          <li className="icons insta"><a href=""><FaInstagramSquare className="icon sn"/></a></li>
+          <li className="icons fb"><a href="https://www.facebook.com/NationalLouis?fref=ts" target="_blank"><FaFacebookF className="icon sn"/></a></li>
+          <li className="icons tw"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FNationalLouisU" target="_blank"><FaTwitter className="icon sn"/></a></li>
+          <li className="icons insta"><a href="https://www.instagram.com/nationallouisu/" target="_blank"><FaInstagramSquare className="icon sn"/></a></li>
           </ul>
         </li>
         <li>

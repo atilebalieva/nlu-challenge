@@ -72,6 +72,8 @@
 
 .flavors-list_block  {
  flex-grow: 1;
+ position: relative;
+ z-index: -1;
 }
 
 .flavors-list_block h3 {

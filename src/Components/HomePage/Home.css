@@ -9,6 +9,9 @@
 
 .main_info_block {
  width: 60%;
+ display: flex;
+ flex-direction: column;
+
 }
 
 .main_info_text {
@@ -22,4 +25,10 @@
 
 .main_info_block h2 span {
  color: rgb(53, 102, 215);
+}
+
+@media only screen and (max-width: 768px) {
+ .main_info {
+    justify-content: center !important;
+ }
 }

@@ -6,15 +6,16 @@
   list-style: none;
 }
 
+.main_content {
+  flex-grow: 1;
+}
+
 .main_container {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.main_content {
-  flex-grow: 1;
+  position: relative;
 }
 
  .container {
@@ -26,20 +27,4 @@
 
  .icon {
   color: rgb(73 118 193);
-}
-
-.footer_container {
-  height: 85px;
-  padding: 10px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-.footer_container img {
-  width: 200px;
-  max-width: 100%;
-  min-width: 130px;
-  height: auto;
 }

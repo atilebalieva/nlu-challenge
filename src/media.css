@@ -8,6 +8,14 @@
    .main_info_block {
       width: 100% !important;
    }
+   
+   .main_info {
+      justify-content: center !important;
+   }
+
+   .form_container {
+      margin-top: 20px;
+   }
 }
 
 @media only screen and (max-width: 768px) {

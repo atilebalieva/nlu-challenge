@@ -1,12 +1,12 @@
 .form_container {
   width: 300px;
   min-width: 250px;
-  height: 350px;
-  min-height:  410px;
+  height: 365px;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid rgb(213, 213, 213);
   box-shadow: 0px 1px 7px 2px rgb(190, 190, 190);
+  
 }
 
 .form_container h3 {
@@ -65,7 +65,7 @@
  }
 
  .description-thanks {
-   font-size: 15px;
+   font-size: 13px;
    margin-top: 10px;
    color: green;
    text-align: center;

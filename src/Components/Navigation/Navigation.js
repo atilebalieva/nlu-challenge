@@ -80,7 +80,7 @@ function Navigation() {
              <button className="search-button">
                <FaSearch className="search_icon"/>
              </button>
-             <ul className={`nav-search_menu ${foundFlavors ? 'backgroundColor' : ''}`} onClick={()=> setSearchText("")} >
+             <ul className={`nav-search_menu ${foundFlavors ? 'backgroundColor' : 'display_search'}`} onClick={()=> setSearchText("")} >
               {foundFlavors?.map((flavor) => {
                 return <li key={uuidv4()}><Link  className="nav-search_menu-link" to={"flavors/" + flavor.categoryId + "?highlight=" + flavor.name} >{flavor.name} - <i>{flavor.categoryName}</i></Link></li> 
               })}
